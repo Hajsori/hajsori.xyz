@@ -4,6 +4,14 @@
 }
 
 
+#top {
+    top: 0;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
 
 #main-title-div {
     height: 256px;
@@ -240,14 +248,14 @@
     #main-title-div {
         width: 90%;
     }
-    
+
     .aboutme-left {
-        width: 100%;
+        width: 200%;
         padding: 0 0 0 5vh;
     }
     .aboutme-right {
-        width: 100%;
-        padding: 0 0 0 5vh;
+        display: none;
+        width: 0;
     }
 }
 

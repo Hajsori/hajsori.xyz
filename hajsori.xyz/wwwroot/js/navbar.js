@@ -1,6 +1,7 @@
 ﻿const navDropdown = document.querySelector(".nav-dropdown");
 const navBurger = document.querySelector(".nav-burger");
 const navBar = document.querySelector("nav");
+const navList = document.querySelectorAll(".nav-list");
 
 let forceOpen = null;
 
@@ -20,3 +21,10 @@ navDropdown.addEventListener("mouseleave", () => {
         navBar.classList.toggle("active", false);
     }
 });
+navList.forEach((nav) => {
+    nav.addEventListener("click", () => {
+        forceOpen = !forceOpen;
+        navBurger.classList.toggle("active", forceOpen);
+        navBar.classList.toggle("active", forceOpen);
+    })
+})
