@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - hajsori.xyz</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/hajsori.xyz.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" integrity="" crossorigin="anonymous" />   
+</head>
+<body>
+    <header>
+        <div class="nav-dropdown">
+            <div class="nav-burger">
+                <span></span>
+				<span></span>
+				<span></span>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-list-ctn"><a class="nav-list-a" asp-page="/Index">Home</a></li>
+                    <li class="nav-list-ctn"><a class="nav-list-a" asp-page="/Index" asp-fragment="aboutme">About me</a></li>
+                    <li class="nav-list-ctn"><a class="nav-list-a" asp-page="/Projects">Projects</a></li>
+                    <li class="nav-list-ctn"><a class="nav-list-a" asp-page="/Index" asp-fragment="contact">Contact</a></li>
+                    <li class="nav-list-ctn"><a class="nav-list-a" asp-page="/SocialMedia">Social Media</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <footer>
+        <ul class="footer-list">
+            <li>© hajsori.xyz 2025</li>
+            <li><a asp-page="/Imprint">Imprint</a> | <a asp-page="/Privacy">Privacy</a></li>
+        </ul>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/navbar.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

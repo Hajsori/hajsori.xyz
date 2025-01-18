@@ -1,0 +1,67 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<link rel="stylesheet" href="~/css/home/style.css" asp-append-version="true" />
+
+
+<div id="main-title-div">
+    <span></span>
+	<span></span>
+	<span></span>
+	<span></span>
+	<h1 class="main-title">Welcome to Hajsori.XYZ</h1>
+</div>
+
+<div id="aboutme">
+	<h3 class="aboutme-title">About Me :3</h3>
+	
+	<div class="aboutme-left">
+		<p class="aboutme-text">Haj Visitor</p>
+		<h3 class="aboutme-text">I'm Hajsori</h3>
+		<p class="aboutme-text">
+			and I'm a passionate programmer and super-pro-gamer. I've been programming since 2021, when I decided to create a Discord-Bot for myself because I didn't wanted to pay for Premium-Features.
+		</p>
+
+		<a asp-page="/Index" asp-fragment="contact" class="default-button aboutme-contact">Contact Me</a>
+	</div>
+	<div class="aboutme-right">
+		<img src="https://cdn.discordapp.com/attachments/286598318853718016/1329866880579666032/blue-shark-shark.gif?ex=678be68c&is=678a950c&hm=8a0eca5773240089104eeba6993f105d393f7c15ef79ea3e0957335fda3e30a3&" alt="me~" class="aboutme-image" />
+	</div>
+</div>
+
+<div id="contact">
+	<h3 class="contact-title">Contact</h3>
+	<div class="contact-options">
+		<div class="contact-option contact-email">
+			<div class="contact-option-left">
+				<div class="contact-option-icon">
+					<i class="contact-option-i contact-i-email fa-regular fa-envelope"></i>
+				</div>
+			</div>
+			<div class="contact-option-right">
+				<h4 class="contact-option-title">E-Mail</h4>
+				<p>Contact me via E-Mail:</p>
+				<a href="mailto:contact@hajsori.xyz">contact@hajsori.xyz</a>
+			</div>
+		</div>
+
+		<div class="contact-option contact-discord">
+			<div class="contact-option-left">
+				<div class="contact-option-icon">
+					<i class="contact-option-i contact-i-discord fa-brands fa-discord"></i>
+				</div>
+			</div>
+			<div class="contact-option-right">
+				<h4 class="contact-option-title">Discord</h4>
+				<p>Contact me on Discord:</p>
+				<a target="_blank" rel="noopener noreferrer" href="https://discord.gg/AqG9WRMDjp">&commat;hajsori</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="~/js/home/title.js" asp-append-version="true"></script>
