@@ -1,4 +1,6 @@
-﻿const spans = document.querySelectorAll("#main-title-div span");
+﻿// ©️ hajsori.xyz
+
+const spans = document.querySelectorAll("#main-title-div span");
 const title = document.querySelector(".main-title");
 
 const titles = [

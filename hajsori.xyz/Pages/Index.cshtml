@@ -30,7 +30,7 @@
 		<a asp-page="/Index" asp-fragment="contact" class="default-button aboutme-contact">Contact Me</a>
 	</div>
 	<div class="aboutme-right">
-		<img src="https://cdn.discordapp.com/attachments/286598318853718016/1329866880579666032/blue-shark-shark.gif?ex=678be68c&is=678a950c&hm=8a0eca5773240089104eeba6993f105d393f7c15ef79ea3e0957335fda3e30a3&" alt="me~" class="aboutme-image" />
+		<img src="~/blue-shark-shark.gif" alt="me~" class="aboutme-image" />
 	</div>
 </div>
 
@@ -38,28 +38,25 @@
 	<h3 class="contact-title">Contact</h3>
 	<div class="contact-options">
 		<div class="contact-option contact-email">
-			<div class="contact-option-left">
-				<div class="contact-option-icon">
-					<i class="contact-option-i contact-i-email fa-regular fa-envelope"></i>
-				</div>
-			</div>
-			<div class="contact-option-right">
-				<h4 class="contact-option-title">E-Mail</h4>
-				<p>Contact me via E-Mail:</p>
-				<a href="mailto:contact@hajsori.xyz">contact@hajsori.xyz</a>
+			<i class="contact-option-icon contact-i-email fa-regular fa-envelope"></i>
+			<h4 class="contact-option-title">E-Mail</h4>
+			
+			<p>You can always contact me via <a href="mailto:contact@hajsori.xyz">contact@hajsori.xyz</a>, but please note that I will not receive an e-mail at the moment.</p>
+			
+			<div class="contact-buttons">
+				<a class="default-button" href="mailto:contact@hajsori.xyz">Contact</a>
 			</div>
 		</div>
 
 		<div class="contact-option contact-discord">
-			<div class="contact-option-left">
-				<div class="contact-option-icon">
-					<i class="contact-option-i contact-i-discord fa-brands fa-discord"></i>
-				</div>
-			</div>
-			<div class="contact-option-right">
-				<h4 class="contact-option-title">Discord</h4>
-				<p>Contact me on Discord:</p>
-				<a target="_blank" rel="noopener noreferrer" href="https://discord.gg/AqG9WRMDjp">&commat;hajsori</a>
+			<i class="contact-option-icon contact-i-discord fa-brands fa-discord"></i>
+			<h4 class="contact-option-title">Discord</h4>
+			
+			<p>You can also contact me on Discord every time, I can also answer earlier there. My name there is <a target="_blank" rel="noopener noreferrer" href="https://discord.com/users/926602498251325522">&commat;hajsori</a></p>
+			
+			<div class="contact-buttons">
+				<a class="contact-button default-button" target="_blank" rel="noopener noreferrer" href="https://discord.gg/AqG9WRMDjp">My Discord Server</a>
+				<a class="contact-button default-button" target="_blank" rel="noopener noreferrer" href="https://discord.com/users/926602498251325522">&commat;hajsori</a>
 			</div>
 		</div>
 	</div>

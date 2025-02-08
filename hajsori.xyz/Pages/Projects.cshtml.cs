@@ -1,12 +1,12 @@
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace hajsori.xyz.Pages
 {
-    public class IndexModel : PageModel
+    public class ProjectsModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public ProjectsModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
         }

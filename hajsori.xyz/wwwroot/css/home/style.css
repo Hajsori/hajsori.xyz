@@ -1,4 +1,6 @@
-﻿:root {
+﻿/* ©️ hajsori.xyz */
+
+:root {
     --email-color: #2276fb;
     --discord-color: #5865F2;
 }
@@ -124,56 +126,35 @@
     flex-wrap: wrap;
 }
 .contact-option {
-    display: flex;
-    height: 128px;
-    width: 312px;
+    height: 50vh;
+    width: 35%;
+    max-width: 544px;
     border: 2px solid var(--secondary-background-color);
     border-radius: 32px;
-    transition-duration: 0.2s;
-}
-.contact-option-left {
-    width: 128px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contact-option-right {
-    margin-left: 6px;
-}
-.contact-option-icon {
-    height: 90%;
-    width: 90%;
-    border: 2px solid var(--secondary-background-color);
-    border-radius: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contact-option-i {
-    font-size: 96px;
-    transition-duration: 0.2s;
-}
-.contact-option-title {
-    margin: 12px 0 0;
-}
-.contact-option p {
-    margin: 0;
+    flex-direction: column;
 }
 
-.contact-email:hover {
-    box-shadow: 0 0 15px 0 var(--email-color);
+.contact-option-icon {
+    font-size: 32px;
+    align-self: end;
+    margin: 16px;
 }
-.contact-email:hover .contact-i-email {
-    color: var(--email-color);
+.contact-option-title {
+    margin: 48px 16px 16px;
+    font-size: 24px;
 }
-.contact-i-discord {
-    font-size: 80px;
+.contact-option p {
+    margin: 16px;
 }
-.contact-discord:hover {
-    box-shadow: 0 0 15px 0 var(--discord-color);
+
+.contact-buttons {
+    align-self: center;
+    margin-top: auto;
+    transform: translateY(-100%);
 }
-.contact-discord:hover .contact-i-discord {
-    color: var(--discord-color);
+.contact-button {
+    margin: 8px;
 }
 
 
