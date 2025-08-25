@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@render("title") - hajsori.xyz</title>
+    <link rel="stylesheet" href="/cdn/css/site.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" integrity="" crossorigin="anonymous" />
+</head>
+<body>
+<header>
+    <div class="nav-dropdown">
+        <div class="nav-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-list-ctn"><a class="nav-list-a" href="/">Home</a></li>
+                <li class="nav-list-ctn"><a class="nav-list-a" href="https://games.hajsori.xyz/Index">Games</a></li>
+                <li class="nav-list-ctn"><a class="nav-list-a" href="/#aboutme">About me</a></li>
+                <li class="nav-list-ctn"><a class="nav-list-a" href="/projects">Projects</a></li>
+                <li class="nav-list-ctn"><a class="nav-list-a" href="/#contact">Contact</a></li>
+                <li class="nav-list-ctn"><a class="nav-list-a" href="/socialmedia">Social Media</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main role="main" class="pb-3">
+    @render_body
+</main>
+
+<footer>
+    <ul class="footer-list">
+        <li>© hajsori.xyz 2025</li>
+        <li><a href="/imprint">Imprint</a> | <a href="/privacy">Privacy</a></li>
+    </ul>
+</footer>
+
+<script src="/cdn/js/navbar.js"></script>
+</body>
+</html>

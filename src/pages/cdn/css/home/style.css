@@ -1,0 +1,250 @@
+﻿/* ©️ hajsori.xyz */
+
+:root {
+    --email-color: #2276fb;
+    --discord-color: #5865F2;
+}
+
+
+#top {
+    top: 0;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#main-title-div {
+    height: 256px;
+    width: 640px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main-title {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+    text-align: center;
+}
+#main-title-div span {
+    position: absolute;
+    background: var(--primary-text-color);
+}
+#main-title-div span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateX(-50%);
+}
+#main-title-div span:nth-child(2) {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    animation-delay: 0.125s;
+    transform: translateY(50%);
+}
+#main-title-div span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: translateX(50%);
+}
+#main-title-div span:nth-child(4) {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    animation-delay: 0.125s;
+    transform: translateY(-50%);
+}
+
+
+#aboutme {
+    top: 100vh;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.aboutme-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5vh 0 12vh;
+}
+.aboutme-right {
+    width: 50%;
+    padding: 0 12vh 0 5vh;
+}
+.aboutme-title {
+    position: absolute;
+    margin: 10vh;
+    top: 0;
+}
+.aboutme-text {
+    text-align: right;
+    margin-left: 10%;
+}
+.aboutme-contact {
+    align-self: end;
+    position: relative;
+    top: 5vh;
+}
+.aboutme-image {
+    width: 100%;
+    margin-right: 10%;
+}
+
+
+#contact {
+    top: 200vh;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+.contact-title {
+    margin: 10vh;
+}
+.contact-options {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-option {
+    height: 50vh;
+    width: 35%;
+    max-width: 544px;
+    border: 2px solid var(--secondary-background-color);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-option-icon {
+    font-size: 32px;
+    align-self: end;
+    margin: 16px;
+}
+.contact-option-title {
+    margin: 48px 16px 16px;
+    font-size: 24px;
+}
+.contact-option p {
+    margin: 16px;
+}
+
+.contact-buttons {
+    align-self: center;
+    margin-top: auto;
+    transform: translateY(-100%);
+}
+.contact-button {
+    margin: 8px;
+}
+
+
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    74% {
+        transform: translateX(100%);
+    }
+    75% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+@keyframes animate2 {
+    0% {
+        transform: translateY(50%);
+    }
+
+    24% {
+        transform: translateY(100%);
+    }
+    25% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(50%);
+    }
+}
+@keyframes animate3 {
+    0% {
+        transform: translateX(50%);
+    }
+
+    74% {
+        transform: translateX(-100%);
+    }
+    75% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(50%);
+    }
+}
+@keyframes animate4 {
+    0% {
+        transform: translateY(-50%);
+    }
+
+    24% {
+        transform: translateY(-100%);
+    }
+    25% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+
+@media screen and (max-width: 712px) {
+    #main-title-div {
+        width: 90%;
+    }
+
+    .aboutme-left {
+        width: 200%;
+        padding: 0 0 0 5vh;
+    }
+    .aboutme-right {
+        display: none;
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .aboutme-left {
+        padding: 0 5vh 0 5vh;
+    }
+    .aboutme-right {
+        padding: 0 5vh 0 5vh;
+    }
+}
