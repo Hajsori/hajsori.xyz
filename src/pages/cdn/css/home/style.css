@@ -104,6 +104,10 @@
     position: relative;
     top: 5vh;
 }
+.aboutme-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
 .aboutme-image {
     width: 100%;
     margin-right: 10%;

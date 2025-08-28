@@ -33,6 +33,16 @@ a:visited {
     color: #0051ff;
 }
 
+p {
+    margin: 0;
+}
+h1 {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+}
+
 
 
 .nav-dropdown {
@@ -154,6 +164,12 @@ footer {
 }
 .default-button:hover {
     box-shadow: 0 0 15px 0 var(--secondary-background-color);
+}
+
+.default-site {
+    height: 100vh;
+    position: absolute;
+    margin: 56px;
 }
 
 
